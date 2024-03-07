@@ -39,6 +39,46 @@
             justify-content: center;
             gap: 10px;
         }
+
+        button {
+            width: 100px; /* Specify the width */
+            height: 50px; /* Specify the height */
+            padding: 10px; /* Add padding to ensure content is centered */
+            font-size: 24px; /* Adjust font size for readability */
+            border: none;
+            border-radius: 5px; /* Optional: Rounds the corners */
+            background-color: #007BFF; /* Example background color */
+            color: white; /* Text color */
+            cursor: pointer;
+            text-align: center; /* Ensure text is centered */
+            display: inline-block; /* Allows setting width and height */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        @media (max-width: 600px) {
+            #gameArea {
+                width: 320px; /* Adjust game area size for smaller screens */
+                height: 320px;
+                grid-template-columns: repeat(20, 16px); /* Adjust based on your design */
+            }
+
+            button {
+                padding: 20px 50px; /* Larger padding for easier tapping */
+                font-size: 32px; /* Larger text */
+                margin: 15px;
+                background-color: #007BFF;
+            }
+
+            #controls {
+                flex-direction: column; /* Stack buttons vertically for easier access */
+                gap: 20px;
+            }
+
+            .snake-body, .food {
+                width: 16px; /* Adjust according to new game area scaling */
+                height: 16px;
+            }
+        }
     </style>
 </head>
 <body>
