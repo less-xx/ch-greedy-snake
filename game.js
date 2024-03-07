@@ -3,7 +3,7 @@ class Game {
         this.areaSize = 40;
         this.gameArea = [];
         this.foods = [];
-        this.foodCount = 5;
+        this.foodCount = 10;
         this.foodTypes = ['C', 'H'];
         this.speed = 200; // Milliseconds
         this.score = 0;
