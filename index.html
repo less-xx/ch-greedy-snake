@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greedy Snake Game</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #gameArea {
+            width: 640px;
+            height: 640px;
+            display: grid;
+            grid-template-columns: repeat(40, 16px);
+            grid-gap: 1px;
+            border: 2px solid #000;
+        }
+        .snake-body, .food {
+            width: 16px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #scorePanel {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        #controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="scorePanel">Score: 0</div>
+<div id="gameArea"></div>
+<div id="controls">
+    <button id="up">Up</button>
+    <button id="left">Left</button>
+    <button id="down">Down</button>
+    <button id="right">Right</button>
+</div>
+<script src="snake.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
